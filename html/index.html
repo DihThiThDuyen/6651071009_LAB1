@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f4ec">
+  <meta name="description" content="Ghé Tiệm Nhà Bông để tìm người bạn nhỏ đáng yêu, khỏe mạnh và sẵn sàng về nhà cùng bạn.">
+  <title>Nhà Bông — Người bạn nhỏ, niềm vui to</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Nhà Bông, về đầu trang">
+      <span class="brand-mark" aria-hidden="true">n<span>♡</span></span>
+      <span class="brand-name">nhà bông<small>tiệm thú cưng nhỏ</small></span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Điều hướng chính"></nav>
+    <button class="cart-trigger" type="button" aria-label="Mở giỏ hàng" aria-haspopup="dialog">
+      <svg class="bag-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="M5 8h14l1 13H4L5 8Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 9V6a3 3 0 0 1 6 0v3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><span class="cart-label">Giỏ hàng</span><span class="cart-count" aria-live="polite">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> Từ chiếc mũi ươn ướt, gửi bạn chút yêu thương</p>
+        <h1>Một người bạn nhỏ,<br>một <span>nhà đầy vui.</span></h1>
+        <p class="hero-description">Các bé được chăm sóc kỹ càng, khỏe mạnh và sẵn sàng mang thật nhiều tiếng cười về nhà bạn.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#pets">Tìm bạn nhỏ <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#promise">Tìm hiểu về Nhà Bông <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-note"><span><strong>Hơn 320 bé</strong> đã tìm được mái nhà ấm áp</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-photo-wrap">
+          <img class="hero-photo" src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=1100&q=85" alt="Chú chó golden retriever đáng yêu đang nhìn bạn" fetchpriority="high">
+        </div>
+        <div class="photo-sticker sticker-top" aria-hidden="true">♡</div>
+        <div class="photo-sticker sticker-bottom"><span aria-hidden="true">✿</span><span>Bạn mới<br>đang chờ!</span></div>
+        <div class="photo-caption"><span class="caption-paw" aria-hidden="true">🐾</span> Bắt đầu từ một lần gặp gỡ</div>
+      </div>
+      <span class="hero-sparkle sparkle-one" aria-hidden="true">✳</span>
+      <span class="hero-sparkle sparkle-two" aria-hidden="true">✦</span>
+    </section>
+
+    <section class="promise-strip" id="promise" aria-label="Cam kết Nhà Bông">
+      <div><span class="promise-icon icon-peach" aria-hidden="true">♡</span><span><strong>Khỏe mạnh</strong><small>Được kiểm tra định kỳ</small></span></div>
+      <div><span class="promise-icon icon-green" aria-hidden="true">✿</span><span><strong>Chăm chút mỗi ngày</strong><small>Yêu thương từ những điều nhỏ</small></span></div>
+      <div><span class="promise-icon icon-yellow" aria-hidden="true">⌂</span><span><strong>Đồng hành tận tâm</strong><small>Bên bạn cả sau khi đón bé</small></span></div>
+    </section>
+
+    <section class="pets-section" id="pets">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Mấy chiếc má bánh bao đây rồi</p>
+          <h2>Chọn một bé <span>thương thương</span></h2>
+        </div>
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="pet-search" type="search" placeholder="Tìm theo tên..." aria-label="Tìm thú cưng theo tên"></label>
+      </div>
+      <div class="catalog-controls">
+        <div class="filter-tabs" role="group" aria-label="Lọc theo loài">
+          <button class="filter-tab is-active" type="button" data-filter="all" aria-pressed="true">Tất cả</button>
+          <button class="filter-tab" type="button" data-filter="dog" aria-pressed="false">Cún con</button>
+          <button class="filter-tab" type="button" data-filter="cat" aria-pressed="false">Mèo con</button>
+          <button class="filter-tab" type="button" data-filter="small" aria-pressed="false">Bé nhỏ</button>
+          <button class="filter-tab" type="button" data-filter="bird" aria-pressed="false">Bạn có cánh</button>
+        </div>
+        <span class="result-count" id="result-count">6 người bạn đang đợi</span>
+      </div>
+
+      <div class="pet-grid" id="pet-grid">
+        <article class="pet-card" data-kind="dog" data-name="bắp">
+          <div class="pet-image"><img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=700&q=80" alt="Cún Bắp, giống corgi lông vàng" loading="lazy"><span class="pet-tag">Hay cười</span><button class="favorite-button" type="button" aria-label="Thêm Bắp vào yêu thích" aria-pressed="false">♡</button></div>
+          <div class="pet-info"><div class="pet-title"><h3>Bắp</h3><span class="pet-age">3 tháng</span></div><p class="pet-breed">Corgi · Bé trai</p><div class="pet-card-bottom"><strong class="pet-price">8.500.000 <small>₫</small></strong><button class="add-button" type="button" aria-label="Thêm Bắp vào giỏ hàng">+</button></div></div>
+        </article>
+        <article class="pet-card" data-kind="cat" data-name="mơ">
+          <div class="pet-image"><img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=700&q=80" alt="Mèo Mơ lông trắng cam đang nhìn lên" loading="lazy"><span class="pet-tag tag-green">Mê ngủ nướng</span><button class="favorite-button" type="button" aria-label="Thêm Mơ vào yêu thích" aria-pressed="false">♡</button></div>
+          <div class="pet-info"><div class="pet-title"><h3>Mơ</h3><span class="pet-age">2 tháng</span></div><p class="pet-breed">Mèo mướp · Bé gái</p><div class="pet-card-bottom"><strong class="pet-price">3.200.000 <small>₫</small></strong><button class="add-button" type="button" aria-label="Thêm Mơ vào giỏ hàng">+</button></div></div>
+        </article>
+        <article class="pet-card" data-kind="small" data-name="đậu">
+          <div class="pet-image"><img src="https://images.unsplash.com/photo-1589933767411-38a58367efd7?auto=format&fit=crop&w=700&q=80" alt="Thỏ Đậu lông trắng mềm mại" loading="lazy"><span class="pet-tag tag-yellow">Hiền khô</span><button class="favorite-button" type="button" aria-label="Thêm Đậu vào yêu thích" aria-pressed="false">♡</button></div>
+          <div class="pet-info"><div class="pet-title"><h3>Đậu</h3><span class="pet-age">2 tháng</span></div><p class="pet-breed">Thỏ lùn · Bé trai</p><div class="pet-card-bottom"><strong class="pet-price">1.800.000 <small>₫</small></strong><button class="add-button" type="button" aria-label="Thêm Đậu vào giỏ hàng">+</button></div></div>
+        </article>
+        <article class="pet-card" data-kind="dog" data-name="bông">
+          <div class="pet-image"><img src="https://images.unsplash.com/photo-1551717743-49959800b1f6?auto=format&fit=crop&w=700&q=80" alt="Cún Bông nhỏ xinh với bộ lông màu kem" loading="lazy"><span class="pet-tag tag-green">Thích được ôm</span><button class="favorite-button" type="button" aria-label="Thêm Bông vào yêu thích" aria-pressed="false">♡</button></div>
+          <div class="pet-info"><div class="pet-title"><h3>Bông</h3><span class="pet-age">4 tháng</span></div><p class="pet-breed">Poodle · Bé gái</p><div class="pet-card-bottom"><strong class="pet-price">6.900.000 <small>₫</small></strong><button class="add-button" type="button" aria-label="Thêm Bông vào giỏ hàng">+</button></div></div>
+        </article>
+        <article class="pet-card" data-kind="cat" data-name="tiêu">
+          <div class="pet-image"><img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=700&q=80" alt="Mèo Tiêu lông xám trắng, đôi mắt xanh" loading="lazy"><span class="pet-tag tag-yellow">Tò mò lắm</span><button class="favorite-button" type="button" aria-label="Thêm Tiêu vào yêu thích" aria-pressed="false">♡</button></div>
+          <div class="pet-info"><div class="pet-title"><h3>Tiêu</h3><span class="pet-age">3 tháng</span></div><p class="pet-breed">Mèo Anh lông ngắn · Bé trai</p><div class="pet-card-bottom"><strong class="pet-price">5.500.000 <small>₫</small></strong><button class="add-button" type="button" aria-label="Thêm Tiêu vào giỏ hàng">+</button></div></div>
+        </article>
+        <article class="pet-card" data-kind="bird" data-name="cốm">
+          <div class="pet-image"><img src="https://images.unsplash.com/photo-1552728089-57bdde30beb3?auto=format&fit=crop&w=700&q=80" alt="Chú vẹt nhỏ màu sắc rực rỡ tên Cốm" loading="lazy"><span class="pet-tag">Hay líu lo</span><button class="favorite-button" type="button" aria-label="Thêm Cốm vào yêu thích" aria-pressed="false">♡</button></div>
+          <div class="pet-info"><div class="pet-title"><h3>Cốm</h3><span class="pet-age">5 tháng</span></div><p class="pet-breed">Vẹt yến phụng · Bé trai</p><div class="pet-card-bottom"><strong class="pet-price">950.000 <small>₫</small></strong><button class="add-button" type="button" aria-label="Thêm Cốm vào giỏ hàng">+</button></div></div>
+        </article>
+      </div>
+      <p class="empty-state" id="empty-state" hidden>Chưa tìm thấy bé nào tên như vậy. Thử tìm tên khác nhé!</p>
+    </section>
+
+    <section class="adoption-banner" id="adoption">
+      <div class="banner-copy"><p class="eyebrow">Yêu thương đâu cần giá</p><h2>Mái nhà ấm áp đang chờ<br>một bé cần được yêu.</h2><p>Nhà Bông luôn có những người bạn nhỏ cần một gia đình. Cùng tụi mình viết tiếp câu chuyện của bé nha.</p></div>
+      <a class="button button-light" href="mailto:hello@nhabong.vn?subject=Tim%20hieu%20ve%20nhan%20nuoi">Hỏi về nhận nuôi <span aria-hidden="true">↗</span></a>
+      <span class="banner-flower" aria-hidden="true">✿</span>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">n<span>♡</span></span><span class="brand-name">nhà bông<small>tiệm thú cưng nhỏ</small></span></a>
+    <p>Nuôi một bé, thương cả một đời.</p>
+    <span class="footer-contact">Tụi mình luôn ở đây: <a href="mailto:hello@nhabong.vn">hello@nhabong.vn</a></span>
+    <small class="copyright">© 2026 Nhà Bông</small>
+  </footer>
+
+  <dialog class="cart-dialog" aria-labelledby="cart-title">
+    <div class="dialog-header"><div><p class="eyebrow">Một nhà sắp đông vui rồi</p><h2 id="cart-title">Giỏ hàng <span class="dialog-count">(0)</span></h2></div><button class="dialog-close" type="button" aria-label="Đóng giỏ hàng">×</button></div>
+    <div class="cart-items"></div>
+    <div class="cart-empty"><span aria-hidden="true">🐾</span><p>Giỏ hàng đang trống nè.<br>Biết đâu có bé đang đợi bạn ở ngoài kia?</p><button class="button button-primary continue-shopping" type="button">Đi gặp các bé</button></div>
+    <div class="cart-footer" hidden><div class="cart-total"><span>Tổng cộng</span><strong>0 ₫</strong></div><button class="button button-primary checkout-button" type="button">Gửi lời hỏi thăm <span aria-hidden="true">↗</span></button><p class="cart-disclaimer">Tụi mình sẽ liên hệ để tư vấn trước khi bạn đón bé nhé.</p></div>
+  </dialog>
+  <dialog id="edit-pet-dialog" class="edit-dialog"></dialog>
+  <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
